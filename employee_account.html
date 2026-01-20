@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPath</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form action="">
+      <div id="login">
+        <div class="login_heading">
+          <i class="fa-solid fa-briefcase"></i>
+          <h2>CareerPath</h2>
+        </div>
+        <div id="login_border">
+          <div class="greeting">
+            <h3>Create an account</h3>
+            <p>Fill in your details to get started</p>
+          </div>
+          <div class="change_option">
+            <div class="job_left">
+              <i class="fa-solid fa-building"></i>
+              <h4>Employer</h4>
+            </div>
+            <div class="job_right">
+              <a href="account_selection.html"><span>Change</span></a>
+            </div>
+          </div>
+          <div class="js_input_group">
+            <label for="full_name">Full Name</label><br />
+            <input
+              type="text"
+              id="full_name"
+              placeholder="Enter your full name"
+              required
+            /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            /><br />
+            <label for="company_name">Company Name</label><br />
+            <input
+              type="text"
+              id="company_name"
+              placeholder="Enter your company name"
+              required
+            /><br />
+            <label for="password">Password</label><br />
+            <div class="password-box">
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+              />
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <label for="confirm_password">Confirm Password</label><br />
+            <div class="password-box">
+              <input
+                type="password"
+                id="confirm_password"
+                placeholder="Confirm your password"
+                required
+              />
+              <i class="fa-regular fa-eye"></i>
+            </div>
+          </div>
+          <div class="job_seeker_last_text">
+            <p>&#10004;At least 6 character</p>
+            <p>&#10004;Password match</p>
+          </div>
+          <button type="submit" id="login_button">Create Account</button><br />
+          <div class="no_account">
+            <p>
+              Already have an account?
+              <a href="login.html">Sign In</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

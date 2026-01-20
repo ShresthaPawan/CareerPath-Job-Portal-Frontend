@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPath.login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form action="">
+      <div id="login">
+        <div class="login_heading">
+          <i class="fa-solid fa-briefcase"></i>
+          <h2>CareerPath</h2>
+        </div>
+        <div id="login_border">
+          <div class="greeting">
+            <h3>Welcome Back</h3>
+            <p>Sign in to your account to continue</p>
+          </div>
+          <div class="input_group">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email(name@example.com)"
+              required
+            /><br />
+            <div class="password-box">
+              <label for="password">Password</label><br />
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <br />
+            <div class="options">
+              <label class="remember">
+                <input type="checkbox" id="remember_me" />
+                <span>Remember Me</span>
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" id="login_button">Sign In</button><br />
+          </div>
+          <div class="no_account">
+            <p>Or</p>
+            <p>
+              Don't have an account?
+              <a href="account_selection.html">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

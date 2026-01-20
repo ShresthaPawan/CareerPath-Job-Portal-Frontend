@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+/* login page */
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.login_heading i {
+  font-size: 32px;
+  color: royalblue;
+}
+#login_border {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+  text-align: center;
+}
+.greeting h3,
+.greeting p {
+  margin-bottom: 10px;
+}
+
+.input_group {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input_group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  width: 100%;
+  padding-right: 40px; /* space for eye icon */
+}
+
+.password-box i {
+  position: absolute;
+  right: 12px;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.remember input[type="checkbox"] {
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+.options a {
+  color: rgb(38, 38, 233);
+  text-decoration: none;
+}
+#login_button {
+  width: 100%;
+  background-color: rgb(38, 38, 233);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.no_account {
+  text-align: center;
+  font-size: 16px;
+}
+.no_account a {
+  color: rgb(38, 38, 233);
+  text-decoration: none;
+}
+
+/* account_selection page */
+
+.job_card {
+  display: flex;
+  align-items: stretch;
+  gap: 25px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  margin-bottom: 20px;
+}
+
+.job_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.job_card i {
+  font-size: 40px;
+  width: 60px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job_card .job_text,
+.job_card .employer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.job_card h4 {
+  margin-bottom: 8px;
+}
+.job_seeker,
+.employer {
+  margin-bottom: 10px;
+}
+.job_seeker,
+.employer {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.job_seeker i,
+.employer i {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  color: royalblue;
+}
+
+.employer i {
+  color: green;
+}
+.job_text,
+.employer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.job_text h4,
+.employer_text h4 {
+  margin-bottom: 8px;
+}
+
+/* job seeker account creating page */
+.change_option {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  padding: 10px;
+}
+.job_left {
+  display: flex;
+  gap: 15px;
+}
+.job_left i {
+  font-size: 24px;
+  cursor: pointer;
+  color: royalblue;
+}
+
+.fa-solid {
+  color: green;
+}
+.job_right a {
+  text-decoration: none;
+  color: rgb(38, 38, 233);
+}
+.js_input_group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.job_seeker_last_text p {
+  margin-bottom: 10px;
+}
+.job_seeker_last_text {
+  font-size: 14px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
