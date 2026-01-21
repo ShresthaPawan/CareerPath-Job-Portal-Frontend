@@ -8,12 +8,13 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
+  background-color: #f8fafc;
 }
 
 /* ================= NAVIGATION BAR ================= */
 
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +22,8 @@ nav {
   background-color: #ffffff;
   padding: 5px 15px;
   margin: 0 auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.12);
+  z-index: 999999999;
 }
 
 .nav-container {
@@ -42,13 +44,13 @@ nav {
 
 .nav-logo i {
   font-size: 34px;
-  color: royalblue;
+  color: #4f46e5;
 }
 
 .nav-logo h2 {
   font-size: 26px;
   font-weight: 700;
-  color: #222;
+  color: #1e293b;
 }
 
 .navigation {
@@ -58,7 +60,7 @@ nav {
 
 .navigation a {
   text-decoration: none;
-  color: #333;
+  color: #334155;
   font-size: 16px;
   font-weight: 500;
   padding: 8px 12px;
@@ -67,13 +69,13 @@ nav {
 }
 
 .navigation a:hover {
-  background-color: rgba(65, 105, 225, 0.12);
-  color: royalblue;
+  background-color: rgba(79, 70, 229, 0.12);
+  color: #4f46e5;
 }
 
 .nav-login button {
   padding: 10px 22px;
-  background-color: royalblue;
+  background-color: #4f46e5;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -84,7 +86,7 @@ nav {
 }
 
 .nav-login button:hover {
-  background-color: #4169e1;
+  background-color: #4338ca;
   transform: translateY(-1px);
 }
 
@@ -98,7 +100,7 @@ nav {
 .main-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(244, 244, 240);
+  background-color: #f1f5f9;
 }
 
 /* ================= WELCOME SECTION ================= */
@@ -125,8 +127,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(65, 105, 225, 0.12);
-  color: royalblue;
+  background: rgba(6, 182, 212, 0.15);
+  color: #0891b2;
   border-radius: 20px;
   padding: 8px 16px;
   font-size: 14px;
@@ -137,7 +139,7 @@ nav {
 
 .feature i {
   font-size: 16px;
-  color: crimson;
+  color: #f97316;
 }
 
 /* HEADING */
@@ -149,14 +151,14 @@ nav {
 }
 
 .welcome-heading span {
-  color: royalblue;
+  color: #4f46e5;
 }
 
 /* TEXT */
 
 .welcome-text {
   font-size: 17px;
-  color: #181717;
+  color: #334155;
   line-height: 1.8;
   margin-top: 20px;
   padding: 0 320px;
@@ -171,7 +173,7 @@ nav {
   background: #ffffff;
   padding: 12px;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
   max-width: 900px;
   margin: 40px auto;
 }
@@ -188,7 +190,7 @@ nav {
 
 .search-field i {
   font-size: 18px;
-  color: #1e2e3e;
+  color: #0f172a;
 }
 
 .search-field input {
@@ -217,7 +219,7 @@ nav {
   align-items: center;
   gap: 8px;
   padding: 12px 22px;
-  background: royalblue;
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -232,7 +234,7 @@ nav {
 }
 
 .search-btn:hover {
-  background: #4169e1;
+  background: linear-gradient(135deg, #4338ca, #0891b2);
   transform: translateY(-1px);
 }
 
@@ -263,7 +265,7 @@ nav {
 }
 
 .search-opt span:hover {
-  background: rgba(65, 105, 225, 0.1);
+  background: rgba(79, 70, 229, 0.1);
   color: rgb(0, 0, 0);
 }
 
@@ -276,7 +278,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: #f0f0f0;
+  background-color: #e0f2fe;
   align-items: center;
   padding: 100px 80px;
 }
@@ -288,8 +290,8 @@ nav {
 
 .company-profile-container i {
   font-size: 26px;
-  color: royalblue;
-  background-color: #ddd;
+  color: #06b6d4;
+  background-color: #cffafe;
   padding: 5px 10px;
   border-radius: 10px;
 }
@@ -299,7 +301,7 @@ nav {
 .company-profile-container h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #222;
+  color: #0f172a;
 }
 
 /* ================= Feature Job ================= */
@@ -307,7 +309,7 @@ nav {
 .feature-job {
   padding: 10px 5px;
   width: 100%;
-  background-color: #f9fafb;
+  background-color: #f8fafc;
 }
 
 .feature-job-container {
@@ -326,7 +328,7 @@ nav {
   font-size: 38px;
   font-weight: bolder;
   text-transform: capitalize;
-  color: #222;
+  color: #0f172a;
 }
 
 .feature-job-heading-left p {
@@ -356,7 +358,7 @@ nav {
 }
 
 .feature-job-heading-right button:hover {
-  background-color: royalblue;
+  background-color: #4f46e5;
   color: #fff;
 }
 
@@ -370,7 +372,7 @@ nav {
 
 .job-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
@@ -386,8 +388,8 @@ nav {
 .card-feature span {
   font-size: 12px;
   font-weight: 600;
-  color: rgb(38, 54, 202);
-  background-color: #a5b2da;
+  color: #4f46e5;
+  background-color: #e0e7ff;
   padding: 5px 10px;
   border-radius: 7px;
   cursor: pointer;
@@ -395,7 +397,7 @@ nav {
 }
 
 .card-feature span:hover {
-  background-color: royalblue;
+  background-color: #4f46e5;
   color: #fff;
 }
 
@@ -414,14 +416,14 @@ nav {
 
 .job-logo i {
   font-size: 36px;
-  color: royalblue;
+  color: #06b6d4;
   padding: 5px;
 }
 
 .job-title h3 {
   font-size: 16px;
   font-weight: 700;
-  color: #222;
+  color: #0f172a;
   margin-bottom: 6px;
 }
 
@@ -454,7 +456,7 @@ nav {
   gap: 5px;
   padding: 2px;
   margin-bottom: 5px;
-  color: #666;
+  color: #475569;
 }
 
 .job-type {
@@ -470,8 +472,8 @@ nav {
 .skills span {
   font-size: 14px;
   font-weight: 500;
-  color: #557cc6;
-  background: #f0f0f0;
+  color: #0369a1;
+  background: #e0f2fe;
   padding: 6px 12px;
   margin-right: 15px;
   border-radius: 12px;
@@ -501,8 +503,7 @@ nav {
 }
 
 .apply-btn button {
-  /* padding: 10px 22px; */
-  color: #4169e1;
+  color: #4f46e5;
   background: transparent;
   border: none;
   border-radius: 8px;
@@ -522,7 +523,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #e0e0e0;
+  background-color: #f1f5f9;
 }
 .category-heading {
   padding-top: 100px;
@@ -607,15 +608,15 @@ nav {
 
 .category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.18);
 }
 
 /*  Companies Hiring  */
 
 .companies-hiring {
   width: 100%;
-  padding: 80px 5%; /* Responsive side padding */
-  background-color: #f8fafc; /* Light slate background to make white cards pop */
+  padding: 80px 5%;
+  background-color: #f8fafc;
 }
 
 .company-container {
@@ -651,8 +652,8 @@ nav {
 /* THE COMPANY CARD (The Box) */
 .company {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px; /* Soft rounded corners */
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -666,29 +667,28 @@ nav {
 
 /* Hover Effects */
 .company:hover {
-  transform: translateY(-8px); /* Lifts up */
+  transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  border-color: #6366f1; /* Indigo border on hover */
+  border-color: #4f46e5;
 }
 
 /* Icon Styling */
 .company i {
   font-size: 42px;
-  color: #6366f1; /* Indigo color */
+  color: #06b6d4;
   margin-bottom: 15px;
-  /* Optional: Add a subtle background behind the icon */
-  background: #eef2ff;
+  background: #ecfeff;
   width: 70px;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* Circle shape */
+  border-radius: 50%;
   transition: 0.3s;
 }
 
 .company:hover i {
-  background: #6366f1;
+  background: #06b6d4;
   color: #ffffff;
 }
 
@@ -698,8 +698,8 @@ nav {
   height: 70px;
   object-fit: contain;
   margin-bottom: 15px;
-  padding: 10px; /* Padding to match the look of the icons */
-  background: #fff0f0; /* Slight reddish tint for Netflix/images */
+  padding: 10px;
+  background: #fff0f0;
   border-radius: 50%;
   filter: grayscale(100%);
   transition: filter 0.5s ease;
@@ -720,8 +720,8 @@ nav {
 .company p {
   font-size: 13px;
   font-weight: 500;
-  color: #6366f1; /* Colored text for emphasis */
-  background: #eef2ff; /* Badge background */
+  color: #4f46e5;
+  background: #e0e7ff;
   padding: 6px 14px;
   border-radius: 20px;
 }
@@ -772,17 +772,17 @@ nav {
   font-size: 12px;
 }
 .feedback {
-  background-color: #efeded;
+  background-color: #f1f5f9;
   border-radius: 20px;
   padding: 40px;
 }
 .feedback i {
-  color: rgb(187, 187, 22);
+  color: #facc15;
   font-size: 22px;
 }
 .feedback:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.2);
 }
 
 /* Footer */
@@ -814,7 +814,7 @@ footer {
 }
 .subscribe-bar button {
   padding: 12px 22px;
-  background-color: royalblue;
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -824,7 +824,7 @@ footer {
   transition: all 0.3s ease;
 }
 .subscribe-bar button:hover {
-  background-color: #4169e1;
+  background: linear-gradient(135deg, #4338ca, #0891b2);
   transform: translateY(-1px);
 }
 .footer-options {
@@ -840,7 +840,7 @@ footer {
   transition: color 0.3s;
 }
 .footer-options a:hover {
-  color: royalblue;
+  color: #4f46e5;
 }
 .footer-options ul {
   list-style: none;
